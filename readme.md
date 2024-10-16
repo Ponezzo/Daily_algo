@@ -1,8 +1,7 @@
 # 10월 16일
 
 ### n과 m(2)
-'''
-
+'''python
     def dfs2(start, depth):
         if depth == M:
             print(*ans)
@@ -12,12 +11,10 @@
             dfs2(i+1, depth+1)
             ans.pop()
     dfs2(0, 0)
-
 '''
 
 ### n과 m(4)
-'''
-
+'''python
 def dfs2(start, depth):
     if depth == M:
         print(*ans)
@@ -28,12 +25,10 @@ def dfs2(start, depth):
         dfs2(i, depth+1)
         ans.pop()
 dfs2(0, 0)
-
 '''
 
 ### n과 m(5)
-'''
-
+'''python
 def dfs2(start, depth):
     if depth == M:
         print(*ans)
@@ -44,7 +39,6 @@ def dfs2(start, depth):
         dfs2(i, depth+1)
         ans.pop()
 dfs2(0, 0)
-
 '''
 
 ### 참고
