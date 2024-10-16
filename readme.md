@@ -3,15 +3,15 @@
 ### n과 m(2)
 '''
 
-def dfs2(start, depth):
-    if depth == M:
-        print(*ans)
-        return
-    for i in range(start, N):
-        ans.append(num_list[i])
-        dfs2(i+1, depth+1)
-        ans.pop()
-dfs2(0, 0)
+    def dfs2(start, depth):
+        if depth == M:
+            print(*ans)
+            return
+        for i in range(start, N):
+            ans.append(num_list[i])
+            dfs2(i+1, depth+1)
+            ans.pop()
+    dfs2(0, 0)
 
 '''
 
