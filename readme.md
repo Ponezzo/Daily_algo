@@ -2,6 +2,7 @@
 
 ### DFS와 BFS
 '''
+
     def dfs(g, v, visited):
         visited[v] = True # 방문한경우에
         print(v, end=' ') # 방문한 정점 v를 공백으로 한칸 띄워서 출력
@@ -21,6 +22,7 @@
     # print(g) # [[], [2, 3, 4], [1, 4], [1, 4], [1, 2, 3]] -> 0번 부터가 아니라 1번 부터니까
 
     dfs(g, V, visited)
+    
 '''
 ### DFS도 겨우 이해하는 중이라 BFS는 아예 모르겠어요...
 
@@ -29,6 +31,7 @@
 
 ### n과 m(2)
 '''
+
     def dfs2(start, depth):
         if depth == M:
             print(*ans)
@@ -38,10 +41,12 @@
             dfs2(i+1, depth+1)
             ans.pop()
     dfs2(0, 0)
+
 '''
 
 ### n과 m(4)
 '''
+
     def dfs2(start, depth):
         if depth == M:
             print(*ans)
@@ -52,6 +57,7 @@
             dfs2(i, depth+1)
             ans.pop()
     dfs2(0, 0)
+
 '''
 
 ### n과 m(5)
